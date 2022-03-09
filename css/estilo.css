@@ -1,131 +1,63 @@
 
 body{
-	background-color: ghostwhite;
-}
-
-.logo{
-	align-items: left;
-	widows: 250px;
-	height: 150px;
-	padding-left: 55px;
+	background-color: black;
 }
 
 header{
 	display: grid;
 	grid-template-areas: 
-	"logo frase";
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto;
+	"logo fraseheader";
+	grid-auto-columns: 50% 50%;
+	grid-template-rows: 150px;
 }
 
 .logo{
 	grid-area: logo;
+	height: 50%;
+	align-self: center;
 }
 
-.frase{
-	grid-area: frase;
-	font-family: 'Anton', sans-serif;
-	padding-top: 48px;
-	padding-right: 100px;
+.fraseheader{
+	grid-area: fraseheader;
+	font-family: 'Montserrat', sans-serif;
 	text-align: right;
+	padding-top: 60px;
+	color: whitesmoke;
+	font-size: 16px;
+	align-self: top;
 }
 
-div{
+@media only screen and (max-width: 768px) {
+	header{
 	display: grid;
 	grid-template-areas: 
-	"rockhopperexpert rockhopperelite chiselbra"
-	"chiselcomp allez diverge"
-	"epiccomp epicexpert tarmac";
-	grid-auto-columns: 30% 30% 30%;
-	grid-auto-rows: auto auto auto;
+	"logo"
+	"fraseheader";
+	grid-auto-columns: 100%;
+	grid-template-rows: 150px 50px;
+	}
+
+	.logo{
+		display: flex;
+		flex-direction: row;
+		justify-self: center;
+
+	}
+
+	.fraseheader{
+		display: flex;
+		flex-direction: row;
+		justify-self: center;
+		margin: 0px;
+		padding: 0px;
+	}
+
 }
 
-div{
+.frasehome{
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
 }
 
-.rockhopperexpert{
-	grid-area: rockhopperexpert;
-	width: 90%;
-	height: 90%;
-}
 
-.rockhopperelite{
-	grid-area: rockhopperelite;
-	width: 90%;
-	height: 90%;
-}
-
-.chiselbra{
-	grid-area: chiselbra;
-	width: 90%;
-	height: 90%;
-}
-
-.chiselcomp{
-	grid-area: chiselcomp;
-	width: 90%;
-	height: 90%;
-}
-
-.allez{
-	grid-area: allez;
-	width: 90%;
-	height: 90%;
-}
-
-.diverge{
-	grid-area: diverge;
-	width: 90%;
-	height: 90%;
-}
-
-.epiccomp{
-	grid-area: epiccomp;
-	width: 90%;
-	height: 90%;
-}
-
-.epicexpert{
-	grid-area: epicexpert;
-	width: 90%;
-	height: 90%;
-}
-
-.tarmac{
-	grid-area: tarmac;
-	width: 90%;
-	height: 90%;
-}
-
-@media only screen and (max-width: 768px) {	
-	
-	header{
-		display: grid;
-		grid-template-areas: 
-		"logo frase";
-		grid-template-columns: 50%;
-		grid-template-rows: auto;
-	}	
-
-
-	div{
-			display: grid;
-	grid-template-areas: 
-	"rockhopperexpert" 
-	"rockhopperelite" 
-	"chiselbra"
-	"chiselcomp" 
-	"allez" 
-	"diverge"
-	"epiccomp" 
-	"epicexpert" 
-	"tarmac";
-	grid-auto-columns: 100%;
-	grid-auto-rows: auto auto auto auto auto auto auto auto auto;
-	}
-}
-
-div{
-	align-content: center;
-}
