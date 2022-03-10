@@ -1,6 +1,6 @@
 
 body{
-	background-color: black;
+	background-color: ghostwhite;
 }
 
 header{
@@ -22,9 +22,60 @@ header{
 	font-family: 'Montserrat', sans-serif;
 	text-align: right;
 	padding-top: 60px;
-	color: whitesmoke;
+	color: black;
 	font-size: 16px;
 	align-self: top;
+	
+}
+
+
+main{
+	display: grid;
+	grid-template-areas: 
+	"tarmac"
+	"diverge"
+	"allez"
+	"rockhopper_eliteH"
+	"rockhopper_eliteM"
+	"epic_comp"
+	"epic_expert";
+	grid-auto-columns: 100%;
+	grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.tarmac{
+	grid-area: tarmac;
+	width: 100%;
+}
+
+.diverge{
+	grid-area: diverge;
+	width: 100%;
+}
+
+.allez{
+	grid-area: allez;
+	width: 100%;
+}
+
+.rockhopper_eliteH{
+	grid-area: rockhopper_eliteH;
+	width: 100%;
+}
+
+.rockhopper_eliteM{
+	grid-area: rockhopper_eliteM;
+	width: 100%;
+}
+
+.epic_comp{
+	grid-area: epic_comp;
+	width: 100%;
+}
+
+.epic_expert{
+	grid-area: epic_expert;
+	width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -54,10 +105,5 @@ header{
 
 }
 
-.frasehome{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
 
 
