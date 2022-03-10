@@ -140,6 +140,32 @@ footer{
 		padding: 0px;
 	}
 
+	footer{
+		display: grid;
+		grid-template-areas: 
+		"frasefoo" 
+		"frasefooder";
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto;
+}
+
+	.frasefoo{
+		grid-area: frasefoo;
+		font-family: 'Hind Siliguri', sans-serif;
+		padding-left: 0px;
+		font-size: 14px;
+		text-align: center;
+}
+
+	.frasefooder{
+		grid-area: frasefooder;
+		font-family: 'Hind Siliguri', sans-serif;
+		padding-right: 0px;
+		font-size: 14px;
+		text-align: center;
+
+}	
+
 }
 
 
