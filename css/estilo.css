@@ -129,7 +129,6 @@ footer{
 		flex-direction: row;
 		justify-self: center;
 		padding: 0px;
-
 	}
 
 	.fraseheader{
@@ -138,6 +137,7 @@ footer{
 		justify-self: center;
 		margin: 0px;
 		padding: 0px;
+		font-size: 16px;
 	}
 
 	footer{
