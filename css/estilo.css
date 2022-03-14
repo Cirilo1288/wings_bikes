@@ -52,7 +52,7 @@ main{
 	grid-area: modelos;
 	width: 70%;
 	justify-self: center;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 .tarmac{
 	grid-area: tarmac;
